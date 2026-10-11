@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#180812">
+  <title>Happy Birthday, My Love ♡</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Romantic fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- VanillaTilt.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen">
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div id="particles" aria-hidden="true"></div>
+  <div id="petals" aria-hidden="true"></div>
+
+  <!-- INTRO SCREEN -->
+  <div class="intro" id="intro">
+    <div class="intro-content">
+      <span class="intro-heart">♡</span>
+      <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+      <h1>Someone special<br>deserves a <em>beautiful day.</em></h1>
+      <button class="glass-button" id="openBtn">
+        Open Your Surprise <span>♡</span>
+      </button>
+      <p class="intro-note">Made with love, just for you</p>
+    </div>
+  </div>
+
+  <!-- MAIN WEBSITE -->
+  <main id="mainContent" class="hidden">
+
+    <nav class="topbar">
+      <a href="#" class="brand">with <span>♡</span> love</a>
+      <span class="nav-note">A DAY JUST FOR YOU</span>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">TODAY IS ALL ABOUT YOU</p>
+        <h1 class="hero-title reveal">
+          Happy Birthday,<br>
+          <em id="herName">My Love</em><span class="pink">.</span>
+        </h1>
+        <p class="hero-description reveal">
+          If I could give you one thing in this world,
+          it would be the ability to see yourself through
+          my eyes. Then you'd know how truly special you are. ♡
+        </p>
+        <button class="outline-button reveal" id="letterBtn">
+          A little letter for you <span>↗</span>
+        </button>
+      </div>
+
+      <div class="portrait-side reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="photo-card" data-tilt
+             data-tilt-max="10"
+             data-tilt-speed="650"
+             data-tilt-glare="true"
+             data-tilt-max-glare="0.2">
+          <div class="photo-frame">
+            <img src="girlfriend.jpg" alt="My beautiful birthday girl"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="photo-fallback">
+              <span>♡</span>
+              <p>Your beautiful photo goes here</p>
+              <small>Add girlfriend.jpg to the project folder</small>
+            </div>
+          </div>
+          <div class="photo-caption">
+            <span>my favorite person</span>
+            <span class="caption-heart">♥</span>
+          </div>
+        </div>
+
+        <span class="floating-note note-one">you are magic ✧</span>
+        <span class="floating-note note-two">forever special ♡</span>
+      </div>
+    </section>
+
+    <!-- MESSAGE -->
+    <section class="message-section section-wrap" id="letter">
+      <div class="section-heading">
+        <p class="eyebrow">A FEW WORDS FROM MY HEART</p>
+        <h2>For you, <em>always.</em></h2>
+      </div>
+
+      <article class="letter-card glass-panel" id="letterCard">
+        <span class="letter-decoration">❝</span>
+        <p class="letter-greeting">My dearest <span id="letterName">love</span>,</p>
+        <p>
+          Happy Birthday to the person who makes ordinary moments feel
+          extraordinary. I hope this new chapter of your life brings you
+          endless reasons to smile, dreams that come true, and the kind
+          of happiness that stays.
+        </p>
+        <p>
+          Never forget how precious you are. You deserve beautiful
+          things, peaceful days, warm hugs, and a world full of love.
+          Today, tomorrow, and always, I hope life is kind to you.
+        </p>
+        <p class="letter-signature">With all my heart, <span>♡</span></p>
+      </article>
+    </section>
+
+    <!-- FINAL SURPRISE -->
+    <section class="surprise-section section-wrap">
+      <p class="eyebrow">ONE LAST LITTLE THING</p>
+      <h2>A wish wrapped <em>just for you.</em></h2>
+      <p class="surprise-description">There's a little magic waiting below.</p>
+
+      <button class="gift-button" id="giftBtn" aria-label="Open your birthday surprise">
+        <span class="gift-glow"></span>
+        <span class="gift-box">🎁</span>
+        <span class="gift-label">Tap to unwrap your wish</span>
+      </button>
+
+      <div class="final-message" id="finalMessage" aria-live="polite">
+        <span class="final-heart">♥</span>
+        <h3>Keep shining, beautiful.</h3>
+        <p>May your smile always find a reason to stay. Happy Birthday, my love! ♡</p>
+        <button class="outline-button" id="replayBtn">Make another wish ↻</button>
+      </div>
+    </section>
+
+    <footer>
+      <span>Made with a little bit of magic <span class="pink">♡</span></span>
+      <span>Just for you, always.</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
